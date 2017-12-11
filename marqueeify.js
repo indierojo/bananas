@@ -1,0 +1,1 @@
+javascript: (function () {  var allDivs = document.querySelectorAll('div');  for(var i = 0; i < 10; i++) {     var elNumber = Math.floor(Math.random() * allDivs.length) + 1;    var marquee = document.createElement('marquee');    var el = allDivs[elNumber];    el.parentNode.insertBefore(marquee, el);    marquee.appendChild(el);  }}());
